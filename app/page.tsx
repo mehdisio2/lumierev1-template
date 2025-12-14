@@ -2,6 +2,10 @@ import { LogoCarousel } from "@/components/logo-carousel";
 import { EmpathySection } from "@/components/empathy-section";
 import { TransformationSection } from "@/components/transformation-section";
 import { ServicesSection } from "@/components/services-section";
+import { BeforeAfterSection } from "@/components/before-after-section";
+import { FAQSection } from "@/components/faq-section";
+import { LastCTASection } from "@/components/last-cta-section";
+import { Footer } from "@/components/footer";
 
 const HeroSection = () => {
   return (
@@ -42,20 +46,20 @@ const HeroSection = () => {
             alt="Water Texture"
             className="h-full w-full object-cover object-center scale-105 animate-slow-zoom"
           />
-
-          {/* 2. The Expensive Overlay: Gradient from bottom to top */}
-          <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/40 to-transparent" />
         </div>
 
+        {/* 2. Dark Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-black/40" />
+
         {/* 3. The Content: Centered and Elegant */}
-        <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
+        <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 md:px-4 text-center">
           {/* Top Tagline: Wide spacing, uppercase, Rose Gold color */}
           <span className="font-sans mb-6 tracking-[0.3em] text-rose-gold uppercase text-xs md:text-sm font-medium opacity-0 animate-fade-in-up delay-100">
             Aesthetic Medicine • Paris
           </span>
 
           {/* Main Headline: Big, Serif, White with enhanced text shadow for readability */}
-          <h1 className="font-serif max-w-4xl text-5xl md:text-7xl leading-tight text-white text-shadow-soft opacity-0 animate-fade-in-up delay-300">
+          <h1 className="font-serif max-w-4xl text-4xl sm:text-5xl md:text-7xl leading-tight text-white text-shadow-soft opacity-0 animate-fade-in-up delay-300">
             Reveal Your <br />
             <span className="italic text-rose-gold">Timeless</span> Nature
           </h1>
@@ -67,7 +71,7 @@ const HeroSection = () => {
 
           {/* 4. The "Glass" CTA Button */}
           <div className="mt-10 opacity-0 animate-fade-in-up delay-700">
-            <button className="group relative px-8 py-4 overflow-hidden rounded-sm bg-white/10 backdrop-blur-sm border border-champagne/50 transition-all duration-500 hover:bg-champagne hover:border-champagne">
+            <button className="group relative px-8 py-4 overflow-hidden rounded-sm bg-white/10 backdrop-blur-sm border border-white/30 transition-all duration-500 hover:bg-white hover:border-white shadow-lg shadow-black/10">
               <span className="font-sans relative z-10 text-sm uppercase tracking-widest text-white group-hover:text-navy transition-colors duration-300">
                 Book Consultation
               </span>
@@ -107,9 +111,10 @@ const HeroSection = () => {
         </div>
 
         {/* --- Doctor Profile Card (Floating Glass) --- */}
-        <div className="absolute bottom-8 right-8 md:bottom-20 md:right-20 opacity-0 animate-fade-in-up delay-1000">
+        {/* Mobile: in-flow centered card | Desktop: absolute positioned */}
+        <div className="relative w-[90%] mx-auto mt-10 md:absolute md:bottom-20 md:right-20 md:w-auto md:mx-0 md:mt-0 opacity-0 animate-fade-in-up delay-1000">
           {/* The Glass Container */}
-          <div className="flex items-center gap-4 p-5 rounded-sm bg-white/5 backdrop-blur-md border border-champagne/30 shadow-2xl max-w-xs transition-transform hover:scale-105 duration-500 cursor-default">
+          <div className="flex items-center gap-4 p-5 rounded-xl md:rounded-sm bg-white/10 md:bg-white/5 backdrop-blur-md border border-champagne/30 shadow-2xl max-w-xs mx-auto md:mx-0 transition-transform hover:scale-105 duration-500 cursor-default">
 
             {/* 1. Doctor Image (Circle) */}
             <div className="relative h-16 w-16 shrink-0">
@@ -140,18 +145,18 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        {/* 7. The "Brand Story" Play Trigger (Bottom Left) */}
-        <div className="absolute bottom-8 left-8 md:bottom-20 md:left-20 text-left opacity-0 animate-fade-in delay-1000">
+        {/* 7. The "Brand Story" Play Trigger (Bottom Left) - Hidden on mobile */}
+        <div className="hidden md:block absolute bottom-8 left-8 md:bottom-20 md:left-20 text-left opacity-0 animate-fade-in delay-1000">
           <p className="font-sans text-[10px] uppercase tracking-[0.3em] text-pearl/60">
             Coordinates
           </p>
           <p className="font-sans text-xs text-champagne mt-1 tracking-widest">
-            33.5731° N • Paris
+            48.8566° N • Paris
           </p>
         </div>
 
-        {/* 5. Footer "Badge" (Scroll indicator) */}
-        <div className="absolute bottom-8 w-full text-center">
+        {/* 5. Footer "Badge" (Scroll indicator) - Hidden on mobile */}
+        <div className="hidden md:block absolute bottom-8 w-full text-center">
           <p className="font-sans text-[10px] tracking-[0.2em] text-rose-gold/80">
             SCROLL TO DISCOVER
           </p>
@@ -161,6 +166,10 @@ const HeroSection = () => {
       <EmpathySection />
       <TransformationSection />
       <ServicesSection />
+      <BeforeAfterSection />
+      <FAQSection />
+      <LastCTASection />
+      <Footer />
     </div>
   );
 };

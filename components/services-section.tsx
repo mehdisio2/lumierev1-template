@@ -45,15 +45,6 @@ export function ServicesSection() {
                         />
                     ))}
                 </div>
-
-                {/* Bottom CTA */}
-                <div className="mt-16 text-center">
-                    <button className="group relative px-8 py-4 overflow-hidden rounded-sm border border-champagne/50 bg-transparent transition-all duration-500 hover:bg-champagne hover:border-champagne cursor-pointer">
-                        <span className="font-sans relative z-10 text-sm uppercase tracking-widest text-navy group-hover:text-navy transition-colors duration-300">
-                            Book a Consultation
-                        </span>
-                    </button>
-                </div>
             </div>
         </section>
     );
