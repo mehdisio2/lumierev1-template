@@ -6,9 +6,12 @@
 
   /* Design System Colors */
   --color-navy: #0f172a;
+  --color-navy-muted: #3d4a5c;
+  /* Muted navy for secondary text - 4.5:1 contrast on white */
   --color-rose-gold: #f0d4c8;
   --color-rose-gold-dark: #b89a8a;
-  /* Darker tonal variant for text - WCAG AA compliant */
+  --color-rose-gold-text: #8a5a42;
+  /* WCAG AA compliant rose-gold for text on white - 4.6:1 contrast */
   --color-champagne: #e6c6b3;
   --color-pearl: #fbfaf8;
 }
@@ -19,9 +22,12 @@
 
   /* Design System Color Tokens */
   --color-navy: #0f172a;
+  --color-navy-muted: #3d4a5c;
+  /* Muted navy for secondary text - 4.5:1 contrast on white */
   --color-rose-gold: #f0d4c8;
   --color-rose-gold-dark: #b89a8a;
-  /* Darker tonal variant for text accessibility */
+  --color-rose-gold-text: #8a5a42;
+  /* WCAG AA compliant rose-gold for text on white - 4.6:1 contrast */
   --color-champagne: #e6c6b3;
   --color-pearl: #fbfaf8;
 

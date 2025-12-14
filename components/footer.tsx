@@ -32,7 +32,7 @@ export const Footer = () => {
                                 placeholder="E-mail adress"
                                 className="flex-1 bg-white/10 border border-champagne/30 rounded-sm px-4 py-3 text-sm text-white placeholder:text-pearl/50 focus:outline-none focus:border-rose-gold transition-colors duration-300"
                             />
-                            <button className="bg-champagne hover:bg-rose-gold text-navy p-3 rounded-full transition-all duration-300 hover:scale-105">
+                            <button aria-label="Subscribe to newsletter" className="bg-champagne hover:bg-rose-gold text-navy p-3 rounded-full transition-all duration-300 hover:scale-105">
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                 </svg>

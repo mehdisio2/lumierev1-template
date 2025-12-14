@@ -25,11 +25,11 @@ export function TransformationSection() {
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-16 lg:mb-20">
                     {/* Main Title */}
                     <h2 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.15] text-navy max-w-2xl">
-                        From Overwhelmed to Effortless: <span className="italic text-rose-gold-dark">Your Skin's New Narrative</span>
+                        From Overwhelmed to Effortless: <span className="italic text-rose-gold-text">Your Skin's New Narrative</span>
                     </h2>
 
                     {/* Subtitle Text - positioned on right, right-aligned on desktop */}
-                    <p className="font-sans text-base md:text-lg text-navy/70 leading-relaxed max-w-[35ch] lg:text-right lg:mt-2">
+                    <p className="font-sans text-base md:text-lg text-navy-muted leading-relaxed max-w-[35ch] lg:text-right lg:mt-2">
                         Navigating modern aesthetics can feel chaotic. We silence the noise to reveal the refined, authentic version of you.
                     </p>
                 </div>
@@ -48,7 +48,7 @@ export function TransformationSection() {
                                     {problems.map((item, index) => (
                                         <li key={index} className="flex items-start gap-3">
                                             <HeartCrack className="w-5 h-5 text-rose-gold mt-0.5 shrink-0" />
-                                            <span className="font-sans text-sm md:text-base text-navy/80 leading-relaxed">
+                                            <span className="font-sans text-sm md:text-base text-navy-muted leading-relaxed">
                                                 {item}
                                             </span>
                                         </li>
@@ -83,7 +83,7 @@ export function TransformationSection() {
                                     {solutions.map((item, index) => (
                                         <li key={index} className="flex items-start gap-3">
                                             <Heart className="w-5 h-5 text-rose-gold mt-0.5 shrink-0" />
-                                            <span className="font-sans text-sm md:text-base text-navy/80 leading-relaxed">
+                                            <span className="font-sans text-sm md:text-base text-navy-muted leading-relaxed">
                                                 {item}
                                             </span>
                                         </li>

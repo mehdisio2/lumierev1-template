@@ -34,11 +34,11 @@ export function BeforeAfterSection() {
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-16 lg:mb-20">
                     {/* Main Title */}
                     <h2 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.15] text-navy max-w-2xl">
-                        Real Results, <span className="italic text-rose-gold-dark">Real Stories</span>
+                        Real Results, <span className="italic text-rose-gold-text">Real Stories</span>
                     </h2>
 
                     {/* Subtitle Text */}
-                    <p className="font-sans text-base md:text-lg text-navy/70 leading-relaxed max-w-[38ch] lg:text-right lg:mt-2">
+                    <p className="font-sans text-base md:text-lg text-navy-muted leading-relaxed max-w-[38ch] lg:text-right lg:mt-2">
                         We've supported countless clients in restoring their confidence and embracing the beauty of healthy skin. Explore their true stories of transformation and renewed hope.
                     </p>
                 </div>
@@ -62,7 +62,7 @@ export function BeforeAfterSection() {
                             </div>
 
                             {/* Quote */}
-                            <blockquote className="font-sans text-sm text-navy/80 leading-relaxed mb-5">
+                            <blockquote className="font-sans text-sm text-navy-muted leading-relaxed mb-5">
                                 "{testimonial.quote}"
                             </blockquote>
 
@@ -73,7 +73,7 @@ export function BeforeAfterSection() {
                                     {testimonial.name}
                                 </p>
                                 <span className="text-champagne">•</span>
-                                <p className="font-sans text-xs text-navy/60">
+                                <p className="font-sans text-xs text-navy-muted">
                                     ({testimonial.duration})
                                 </p>
                                 <div className="h-px flex-1 bg-champagne/60"></div>

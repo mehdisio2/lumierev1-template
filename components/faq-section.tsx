@@ -30,14 +30,14 @@ export function FAQSection() {
             <div className="container mx-auto px-6 md:px-12 lg:px-20">
                 {/* Header */}
                 <div className="text-center mb-12 md:mb-16 lg:mb-20">
-                    <span className="font-sans inline-block tracking-[0.3em] text-rose-gold uppercase text-xs md:text-sm font-medium mb-4">
+                    <span className="font-sans inline-block tracking-[0.3em] text-rose-gold-text uppercase text-xs md:text-sm font-medium mb-4">
                         Questions & Answers
                     </span>
                     <h2 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.15] text-navy max-w-2xl mx-auto">
                         Frequently Asked{" "}
-                        <span className="italic text-rose-gold-dark">Questions</span>
+                        <span className="italic text-rose-gold-text">Questions</span>
                     </h2>
-                    <p className="font-sans text-base md:text-lg text-navy/70 leading-relaxed max-w-xl mx-auto mt-6">
+                    <p className="font-sans text-base md:text-lg text-navy-muted leading-relaxed max-w-xl mx-auto mt-6">
                         Everything you need to know about your journey to refined, natural beauty.
                     </p>
                 </div>
@@ -73,7 +73,7 @@ export function FAQSection() {
                                 <div className="overflow-hidden">
                                     <div className="px-6 md:px-8 pb-6 md:pb-8 pt-0">
                                         <div className="border-t border-champagne/30 pt-6">
-                                            <p className="font-sans text-base text-navy/80 leading-relaxed">
+                                            <p className="font-sans text-base text-navy-muted leading-relaxed">
                                                 {faq.answer}
                                             </p>
                                         </div>

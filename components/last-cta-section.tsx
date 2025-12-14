@@ -34,7 +34,7 @@ export function LastCTASection() {
                         </h2>
 
                         {/* Description */}
-                        <p className="font-sans text-base md:text-lg lg:text-xl text-white/85 leading-relaxed max-w-lg font-light opacity-0 animate-fade-in-up delay-500">
+                        <p className="font-sans text-base md:text-lg lg:text-xl text-white/95 leading-relaxed max-w-lg font-light opacity-0 animate-fade-in-up delay-500">
                             Experience personalized care that honors your unique beauty.
                             Schedule a private consultation and discover the artistry of
                             subtle, refined enhancement.

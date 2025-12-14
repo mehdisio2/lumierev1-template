@@ -28,9 +28,9 @@ export function ServicesSection() {
                 {/* Section Header */}
                 <div className="text-center mb-16 lg:mb-20">
                     <h2 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.15] text-navy max-w-4xl mx-auto">
-                        Science-Led. <span className="italic text-rose-gold-dark">Artfully</span> Applied.
+                        Science-Led. <span className="italic text-rose-gold-text">Artfully</span> Applied.
                     </h2>
-                    <p className="font-sans text-base md:text-lg text-navy/60 leading-relaxed max-w-2xl mx-auto mt-6">
+                    <p className="font-sans text-base md:text-lg text-navy-muted leading-relaxed max-w-2xl mx-auto mt-6">
                         A curated portfolio of clinical treatments designed to restore health, balance, and confidence.
                     </p>
                 </div>

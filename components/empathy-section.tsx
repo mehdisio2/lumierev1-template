@@ -13,11 +13,11 @@ export function EmpathySection() {
                         <h2 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.15] text-navy">
                             You're Not Alone
                             <br />
-                            in <span className="italic text-rose-gold">This journey</span>
+                            in <span className="italic text-rose-gold-text">This journey</span>
                         </h2>
 
                         {/* Body Text */}
-                        <p className="font-sans text-base md:text-lg text-navy/80 leading-relaxed max-w-xl">
+                        <p className="font-sans text-base md:text-lg text-navy-muted leading-relaxed max-w-xl">
                             We see you. The nights spent worrying over thinning hair, the
                             frustration of products that promise change but never deliver, and
                             the loss of joy when it comes to styling your hair. It's not just
