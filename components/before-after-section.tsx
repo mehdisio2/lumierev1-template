@@ -84,7 +84,7 @@ export function BeforeAfterSection() {
 
                 {/* CTA Section */}
                 <div className="mt-16 text-center">
-                    <button className="group relative px-8 py-4 overflow-hidden rounded-sm bg-navy text-white border border-navy transition-all duration-500 hover:bg-transparent hover:text-navy">
+                    <button aria-label="View More Transformations" className="group relative px-8 py-4 overflow-hidden rounded-sm bg-navy text-white border border-navy transition-all duration-500 hover:bg-transparent hover:text-navy">
                         <span className="font-sans relative z-10 text-sm uppercase tracking-widest transition-colors duration-300">
                             View More Transformations
                         </span>

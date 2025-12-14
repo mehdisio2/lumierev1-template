@@ -29,7 +29,7 @@ export function EmpathySection() {
 
                         {/* CTA Button - Matching Hero section style */}
                         <div className="pt-2">
-                            <button className="group relative px-8 py-4 overflow-hidden rounded-sm border border-champagne/50 bg-transparent transition-all duration-500 hover:bg-champagne hover:border-champagne cursor-pointer">
+                            <button aria-label="View Transformation Stories" className="group relative px-8 py-4 overflow-hidden rounded-sm border border-champagne/50 bg-transparent transition-all duration-500 hover:bg-champagne hover:border-champagne cursor-pointer">
                                 <span className="font-sans relative z-10 text-sm uppercase tracking-widest text-navy group-hover:text-navy transition-colors duration-300">
                                     View Transformation Stories
                                 </span>

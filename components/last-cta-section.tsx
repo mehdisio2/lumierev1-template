@@ -42,7 +42,7 @@ export function LastCTASection() {
 
                         {/* CTA Button */}
                         <div className="pt-4 opacity-0 animate-fade-in-up delay-700">
-                            <button className="group relative px-10 py-4 overflow-hidden rounded-sm bg-champagne border border-champagne transition-all duration-500 hover:bg-transparent hover:border-champagne cursor-pointer">
+                            <button aria-label="Book Consultation" className="group relative px-10 py-4 overflow-hidden rounded-sm bg-champagne border border-champagne transition-all duration-500 hover:bg-transparent hover:border-champagne cursor-pointer">
                                 <span className="font-sans relative z-10 text-sm uppercase tracking-widest text-navy group-hover:text-white transition-colors duration-300">
                                     Book Consultation
                                 </span>
