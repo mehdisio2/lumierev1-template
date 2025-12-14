@@ -3,12 +3,27 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Design System Colors */
+  --color-navy: #0f172a;
+  --color-rose-gold: #f0d4c8;
+  --color-champagne: #e6c6b3;
+  --color-pearl: #fbfaf8;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+
+  /* Design System Color Tokens */
+  --color-navy: #0f172a;
+  --color-rose-gold: #f0d4c8;
+  --color-champagne: #e6c6b3;
+  --color-pearl: #fbfaf8;
+
+  /* Typography */
+  --font-sans: var(--font-lato), var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
   --font-mono: var(--font-geist-mono);
 }
 
@@ -139,4 +154,19 @@ body {
 
 .animate-accordion-up {
   animation: accordion-up 0.2s ease-out;
+}
+
+/* Marquee animation for logo carousel */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
 }
