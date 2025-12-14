@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface ServiceCardProps {
     imageSrc: string;
     title: string;
@@ -12,10 +14,12 @@ export function ServiceCard({
     return (
         <div className="relative w-full aspect-2/3 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group cursor-pointer">
             {/* Background Image */}
-            <img
+            <Image
                 src={imageSrc}
                 alt={title}
-                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
             />
 
             {/* Subtle Gradient Overlay - Only at bottom for text readability */}
@@ -32,3 +36,4 @@ export function ServiceCard({
 }
 
 export default ServiceCard;
+

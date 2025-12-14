@@ -1,14 +1,19 @@
 "use client";
 
+import Image from "next/image";
+
 export function LastCTASection() {
     return (
         <section className="relative min-h-[90vh] w-full overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0">
-                <img
+                <Image
                     src="/last-cta-img.jpg"
                     alt="Elegant aesthetic treatment experience"
-                    className="h-full w-full object-cover object-center scale-105 animate-slow-zoom"
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-cover object-center scale-105 animate-slow-zoom"
                 />
 
             </div>

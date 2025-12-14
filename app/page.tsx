@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { LogoCarousel } from "@/components/logo-carousel";
 import { EmpathySection } from "@/components/empathy-section";
 import { TransformationSection } from "@/components/transformation-section";
@@ -41,10 +42,13 @@ const HeroSection = () => {
         </nav>
         {/* 1. Background Image with "Luxury" Animation */}
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/hero-bg.jpg"
             alt="Water Texture"
-            className="h-full w-full object-cover object-center scale-105 animate-slow-zoom"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center scale-105 animate-slow-zoom"
           />
         </div>
 
@@ -83,9 +87,11 @@ const HeroSection = () => {
             <div className="flex -space-x-3">
               {[1, 2, 3].map((i) => (
                 <div key={i} className="relative h-10 w-10 rounded-full border-[2px] border-navy overflow-hidden">
-                  <img
-                    src={`https://i.pravatar.cc/100?img=${i + 20}`} /* Using generic avatars for demo */
+                  <Image
+                    src={`https://i.pravatar.cc/100?img=${i + 20}`}
                     alt="Patient"
+                    width={40}
+                    height={40}
                     className="h-full w-full object-cover grayscale opacity-80"
                   />
                 </div>
@@ -118,9 +124,11 @@ const HeroSection = () => {
 
             {/* 1. Doctor Image (Circle) */}
             <div className="relative h-16 w-16 shrink-0">
-              <img
+              <Image
                 src="/doctor-portrait.jpg"
                 alt="Dr. Sarah"
+                width={64}
+                height={64}
                 className="h-full w-full object-cover rounded-full border border-champagne/50 grayscale hover:grayscale-0 transition-all duration-500"
               />
               {/* Verified Checkmark Badge */}
@@ -161,7 +169,7 @@ const HeroSection = () => {
             SCROLL TO DISCOVER
           </p>
         </div>
-      </section>
+      </section >
       <LogoCarousel />
       <EmpathySection />
       <TransformationSection />
@@ -170,7 +178,7 @@ const HeroSection = () => {
       <FAQSection />
       <LastCTASection />
       <Footer />
-    </div>
+    </div >
   );
 };
 

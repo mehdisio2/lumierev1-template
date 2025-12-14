@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Heart, HeartCrack } from "lucide-react";
 
 const problems = [
@@ -57,11 +58,13 @@ export function TransformationSection() {
 
                             {/* Image */}
                             <div className="w-full md:w-56 lg:w-64 shrink-0 order-1 md:order-2 self-stretch">
-                                <div className="h-full min-h-[200px] overflow-hidden rounded-lg">
-                                    <img
+                                <div className="relative h-full min-h-[200px] overflow-hidden rounded-lg">
+                                    <Image
                                         src="/problem-image.jpg"
                                         alt="Modern skincare fatigue visualization"
-                                        className="h-full w-full object-cover"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 256px"
+                                        className="object-cover"
                                     />
                                 </div>
                             </div>
@@ -90,11 +93,13 @@ export function TransformationSection() {
 
                             {/* Image */}
                             <div className="w-full md:w-56 lg:w-64 shrink-0 order-1 md:order-2 self-stretch">
-                                <div className="h-full min-h-[200px] overflow-hidden rounded-lg">
-                                    <img
+                                <div className="relative h-full min-h-[200px] overflow-hidden rounded-lg">
+                                    <Image
                                         src="/solution-image.jpg"
                                         alt="Refined aesthetic result"
-                                        className="h-full w-full object-cover"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 256px"
+                                        className="object-cover"
                                     />
                                 </div>
                             </div>

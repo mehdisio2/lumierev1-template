@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export function EmpathySection() {
     return (
         <section className="bg-white py-20 md:py-28 lg:py-32 border-t border-champagne/30">
@@ -37,11 +39,13 @@ export function EmpathySection() {
 
                     {/* Right Column: Image */}
                     <div className="relative">
-                        <div className="aspect-[4/3] lg:aspect-[16/10] w-full overflow-hidden rounded-2xl shadow-xl">
-                            <img
+                        <div className="relative aspect-[4/3] lg:aspect-[16/10] w-full overflow-hidden rounded-2xl shadow-xl">
+                            <Image
                                 src="/empathy-group.jpg"
                                 alt="A group of diverse women smiling and embracing, representing community and support"
-                                className="h-full w-full object-cover object-center"
+                                fill
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                className="object-cover object-center"
                             />
                         </div>
                     </div>
@@ -52,3 +56,4 @@ export function EmpathySection() {
 }
 
 export default EmpathySection;
+

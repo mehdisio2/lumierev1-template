@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const testimonials = [
     {
         image: "/before-after/image1.jpg",
@@ -50,10 +52,12 @@ export function BeforeAfterSection() {
                         >
                             {/* Single Image */}
                             <div className="relative aspect-4/5 overflow-hidden rounded-xl mb-5">
-                                <img
+                                <Image
                                     src={testimonial.image}
                                     alt="Transformation result"
-                                    className="h-full w-full object-cover"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    className="object-cover"
                                 />
                             </div>
 
