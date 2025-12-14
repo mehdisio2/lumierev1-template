@@ -1,4 +1,7 @@
 import { LogoCarousel } from "@/components/logo-carousel";
+import { EmpathySection } from "@/components/empathy-section";
+import { TransformationSection } from "@/components/transformation-section";
+import { ServicesSection } from "@/components/services-section";
 
 const HeroSection = () => {
   return (
@@ -51,8 +54,8 @@ const HeroSection = () => {
             Aesthetic Medicine • Paris
           </span>
 
-          {/* Main Headline: Big, Serif, White */}
-          <h1 className="font-serif max-w-4xl text-5xl md:text-7xl leading-tight text-white drop-shadow-lg opacity-0 animate-fade-in-up delay-300">
+          {/* Main Headline: Big, Serif, White with enhanced text shadow for readability */}
+          <h1 className="font-serif max-w-4xl text-5xl md:text-7xl leading-tight text-white text-shadow-soft opacity-0 animate-fade-in-up delay-300">
             Reveal Your <br />
             <span className="italic text-rose-gold">Timeless</span> Nature
           </h1>
@@ -155,6 +158,9 @@ const HeroSection = () => {
         </div>
       </section>
       <LogoCarousel />
+      <EmpathySection />
+      <TransformationSection />
+      <ServicesSection />
     </div>
   );
 };

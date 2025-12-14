@@ -29,7 +29,7 @@ export function LogoCarousel() {
     const duplicatedLogos = [...logos, ...logos]
 
     return (
-        <section className="w-full py-12 overflow-hidden relative" style={{ backgroundColor: "var(--color-pearl)" }}>
+        <section className="w-full py-12 overflow-hidden relative border-b border-gray-200" style={{ backgroundColor: "var(--color-pearl)" }}>
             {/* Left gradient fade - positioned at viewport edge */}
             <div
                 className="absolute left-0 top-0 bottom-0 w-32 z-10 pointer-events-none"

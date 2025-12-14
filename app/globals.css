@@ -7,6 +7,8 @@
   /* Design System Colors */
   --color-navy: #0f172a;
   --color-rose-gold: #f0d4c8;
+  --color-rose-gold-dark: #b89a8a;
+  /* Darker tonal variant for text - WCAG AA compliant */
   --color-champagne: #e6c6b3;
   --color-pearl: #fbfaf8;
 }
@@ -18,6 +20,8 @@
   /* Design System Color Tokens */
   --color-navy: #0f172a;
   --color-rose-gold: #f0d4c8;
+  --color-rose-gold-dark: #b89a8a;
+  /* Darker tonal variant for text accessibility */
   --color-champagne: #e6c6b3;
   --color-pearl: #fbfaf8;
 
@@ -38,6 +42,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Text shadow utility for hero readability */
+.text-shadow-soft {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Custom animations for hero section */
